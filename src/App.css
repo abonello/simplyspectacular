@@ -1,38 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Montserrat:200i,400&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Great Vibes', cursive; */
+
+body {
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: rgb(83, 74, 68);
+  /* background-color: rgb(204, 191, 191); */
+
+  height: 600px;
+  margin-top: 70px;
+}
+
+nav {
+  height: 70px;
+  width: 100vw;
+  /* background-color: black; */
+  /* background-color: rgb(204, 191, 191); */
+  background-color: rgb(83, 74, 68);
+  position: fixed;
+  top: 0;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.4);
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  /* background-color: rgb(198, 184, 184); */
+  /* border: 1px solid black; */
+}
+nav ul li a {
+  text-decoration: none;
+  /* color: white; */
+  color: rgb(155, 130, 116);
+  padding: 12px 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  /* box-shadow: 0 0 10px rgba(255,255,255,0.5); */
+  /* background-color: rgb(204, 191, 191); */
+  /* color: rgb(83, 74, 68); */
+  color: white
+  /* text-shadow: 0 0 10px rgba(255,255,255,0.5); */
+}
+
+.container {
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header {
+  
+  background-color: rgb(83, 74, 68);
+  color: rgb(198, 184, 184);
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Great Vibes', cursive; */
+  font-size: 18px;
+  height: 200px;
+  padding: 20px 100px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  /* width: 100%; */
+}
+.App-header img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 100px auto 0;
+  /* box-shadow: inset 0 0 20px rgba(255,255,255,0.5); */
+}
+.content {
+  background-color: rgb(198, 184, 184);
+  color: rgb(83, 74, 68);
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Great Vibes', cursive; */
+  font-size: 18px;
+  height: 300px;
+  padding: 20px 100px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+}
+
+.cta-primary {
+  background-color: rgb(155, 130, 116);
+  /* color: rgb(206, 185, 166); */
+  /* color: rgb(83, 74, 68); */
+  color: rgb(198, 184, 184);
+  padding: 15px 30px;
+  outline: none;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  border-color: rgb(155, 130, 116);
+  border-radius: 10px;
+  margin: 0 20px;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+.cta-primary:hover {
+  box-shadow: 1px 3px 10px rgba(0,0,0,0.4);
+}
+.cta-primary:active {
+  background-color: rgb(142, 117, 103);
+  border-color: rgb(142, 117, 103);
+  outline: none;
+}
+.cta-secondary {
+  background-color: rgb(206, 185, 166);
+  /* background-color: rgb(155, 130, 116); */
+  color: rgb(83, 74, 68);
+  /* color: rgb(198, 184, 184); */
+  padding: 15px 30px;
+  outline: none;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  border-color: rgb(206, 185, 166);
+  border-radius: 10px;
+  margin: 0 20px;
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+footer {
+  background-color: rgb(83, 74, 68);
+  color: rgb(198, 184, 184);
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Great Vibes', cursive; */
+  font-size: 18px;
+  height: 200px;
+  padding: 45px 0px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+}
+
+
+
+.footer-links-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer-smallprint {
+  /* padding-top: 0; */
+}
+.footer-smallprint ul {
+  list-style: none;
+  margin-top: 0;
+  padding-left: 0;
+}
+.footer-smallprint ul li a {
+  color: rgb(198, 184, 184);
+  text-decoration: none;
+}
+.footer-smallprint ul li a:hover {
+  color: rgb(239,197,99);
 }
 
-.App-link {
-  color: #61dafb;
+.highlight {
+  color: rgb(127, 48, 54);
+  color: rgb(239,197,99);
+  color: rgb(121,95,106);
+  color: rgb(104,101,156);
+  color: rgb(117,156,155);
+  color: rgb(43,79,79);
+  color: rgb(134,207,165);
+  color: rgb(84,168,144);
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
